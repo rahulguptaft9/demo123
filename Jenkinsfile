@@ -9,6 +9,7 @@ pipeline {
 
 
 	environment{
+		//hi
 	registry="mrchelsea"
 	registryCredential='dockerhub'
 	dockerImage=''
