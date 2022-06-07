@@ -37,7 +37,7 @@ pipeline {
 			script{
 		if (params.BRANCH == "master")				
 		//sh 'npm run test-cov'
-				echo "TestingMaster"
+				echo "MASTER"
 		}
 		
 		}
@@ -48,11 +48,22 @@ pipeline {
 			script{
 		if (params.BRANCH == "dev")				
 		//sh 'npm run test-cov'
-				echo "TestingDev"
+				echo "DEV"
 		}
 		
 		}
-	}	
+	}
+		
+	stage('release'){
+		steps{	
+			script{
+		if (params.BRANCH == "release")				
+		//sh 'npm run test-cov'
+				echo "Release"
+		}
+		
+		}
+	}		
 	/*stage('SonarQube'){
 		tools{
 		jdk "jdk11"
