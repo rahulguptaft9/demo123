@@ -6,7 +6,7 @@ pipeline {
 	parameters {  
     gitParameter branchFilter: 'origin/(.*)', name: 'BRANCH', tagFilter: '*', type: 'PT_BRANCH'    
   }
-
+//asdasd
 
 	environment{
 		//hi
